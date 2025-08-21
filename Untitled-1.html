@@ -1,44 +1,38 @@
 <!DOCTYPE html>
-<html lang="en"
-<html>
-    <head>
-        <style>
-            p{
-                color : rgb(50,90,30)
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="deleteData()">Delete the data</button>
+    
+    <script>
+        function deleteData(){
+            const confirmDelete= confirm("Are u sure u want to delete?");
+            if(confirmDelete){
+                alert("Item deleted");
             }
-        </style>
-        <meta charset="UTF-8">
-            <meta name="'viewport" content="width=device-width,initia-scale=1.0">
-            <b>Student Bio Data</b>
-    </head>
-    <title>Student Bio Data </title>
-    <body bgcolor="mangalavaaram"></body>
-    <body>
-        <br><img src="c:\Users\Aaftaab Rabbani Khan\Pictures\Saved Pictures\marvel.webp" alt="kllogo" height="200" width="400"></br>
-        <p style="text-align: justify;color:red" title ="student  bio data">student  bio data</p>     
-        <p><b>Name</b> : Aaftaab Rabbani Khan</p>
-        <p><b>Student ID</b> : 2400030570</p>
-        <p><b>Department</b> : CSE</p>
-        <p><b>Mobile</b> : 8741263950</p>
-        <p><b>Email</b> : 2400030570@kluniveersity.in</p>
-        <a href="https://newerp.kluniversity.in/index.php?r=studentinfo%2Fstudentprofileinfo%2Fviewprofileindi">My ERP Profile Link</a>
-        <h2>Courses Registered</h2>
-        <ol type="i">
-            <li>oop</li>
-            <li>dbms</li>
-            <li>os</li>
-            <li>fedf</li>
-            <li>aiml</li>
-        </ol>
-        <h2>
-            My Hobbies
-        </h2>
-        <ul type="circle">
-            <li>Browsing internet</li>
-            <li>Playing online games</li>
-            <li>Studies</li>
-        </ul>
-
-
-    </body>
+            else{
+                alert("Delete cancelled.");
+            }
+            
+        
+        }
+        
+        
+    </script>
+    <button onclick="getName()">Enter your Name</button>
+    <script>
+        function getName(){
+            const name=prompt("What is your name?");
+            if(name){
+                alert("Hello, " + name + "!");
+            }else{
+                alert("You didn't enter anything.");
+            }
+        }
+    </script>
+</body>
 </html>
