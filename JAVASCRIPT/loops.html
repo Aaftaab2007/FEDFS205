@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JAVASCRIPT FOR LOOP VARIATIONS</h1>
+    <script>
+        let n=[10,20,30,40];
+        document.write(typeof numbers);
+        document.write("<h2>1. Standard for Loop</h2>");
+        for(let i=0;i<n.length;i++)
+        {
+            document.write("index: " + i + "-" + n[i] + "<br>");
+        }
+        document.write("<br>");
+        document.write("<h2>2. For...in loop</h2>");
+        for(let index in n){
+            document.write("Index: " + index + "=" + n[index] + "<br>");
+        }
+        document.write("<br>");
+        document.write("<h2>3. for...of loop</h2>");
+        for(let value of n)
+        {
+            document.write("Value: " + value + "<br>");
+        }
+        document.write("<br>");
+        document.write("<h2>4. forEach() method</h2>");
+        n.forEach(function(value, index){
+            document.write("Index: " + index + "=" + value + "<br>");
+        });
+        document.write("<br>");
+        document.write("<h2>5. WExample with objects</h2>");
+        let student={name: "Brad", age: 69, grade:"A"};
+        for(let key in student)
+        {
+            document.write(key + student[key] + "<br>");
+        }
+        document.write("<h2>6. for...of with string</h2>");
+        let word="Hello";
+        for(let char of word)
+        {
+            document.write(char + "<br>");
+        }
+    </script>
+</body>
+</html>

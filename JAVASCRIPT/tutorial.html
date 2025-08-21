@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <h1>Javascript tutorial</h1>
+    <script>
+        document.write("<h2>Creating Dates</h2>");
+        let now=new Date();
+        document.write("Current date & time: " + now + "<br><br>");
+        let specificDate=new Date(2025,7,13);
+        document.write("Specific date: " + specificDate + "<br><br>");
+        let dateFromString=new Date("2025-08-13T10:30:00");
+        document.write("From String: " + dateFromString + "<br><br>" );
+        let timeStampDate=new Date(1723530000000);
+        document.write("From time stamp: " + timeStampDate + "<br><br>");
+        document.write("<h2>Getting date components</h2>");
+        document.write("Year: " + now.getFullYear() + "<br>");
+        document.write("Month: " + now.getMonth() + "<br>");
+        document.write("Hours: " + now.getHours() + "<br>");
+        document.write("Minutes: " + now.getMinutes() + "<br>");
+        document.write("Seconds: " + now.getSeconds() + "<br>");
+        document.write("Milliseconds: " + now.getMilliseconds() + "<br>");
+        let d=new Date();
+        d.setFullYear(2069);
+        d.setDate(5);
+        d.setHours(12);
+        d.setMinutes(55);
+        d.setSeconds(639);
+        document.write("Modified date: " + d + "<br><br>");
+        document.write("<h2>Formatting dates</h2>");
+        document.write("<h2>Formatting Dates:</h2>");
+        document.write("toDateString():"+now.toDateString()+"<br>");
+        document.write("toTimeString():"+now.toTimeString()+"<br>");
+        document.write("toLocaleDateString():"+now.toLocaleDateString()+"<br>");
+        document.write("toISOString():"+now.toISOString()+"<br>");
+
+        document.write("<h2>Time Difference Example</h2>");
+        let start=new Date("2025-08-13T10:00:00");
+        let end=new Date("2025-08-13T12:30:00");
+        let diffMs=end-start;
+        let diffHours=diffMs/(1000*60*60);
+        document.write("Difference: " + diffHours + "<br>hours</br>");
+
+    </script>
+</body>
+</html>
